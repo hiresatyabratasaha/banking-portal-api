@@ -26,7 +26,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # Expose the port the application runs on
-EXPOSE 8180
+EXPOSE 8080
 
 # Run the application with debug logging enabled
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
