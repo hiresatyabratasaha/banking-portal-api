@@ -14,7 +14,7 @@ COPY pom.xml .
 COPY src ./src
 
 # Build the application
-RUN mvn package -DskipTests
+RUN mvn package
 
 # Stage 2: Create the final image
 FROM openjdk:17-jdk-alpine
