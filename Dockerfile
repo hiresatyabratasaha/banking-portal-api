@@ -11,7 +11,7 @@ WORKDIR /app
 COPY pom.xml .
 
 # Copy the source code
-COPY src ./src
+COPY src .
 
 # Build the application
 RUN mvn package
